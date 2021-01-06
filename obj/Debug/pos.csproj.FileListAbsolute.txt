@@ -1,0 +1,9 @@
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\bin\Debug\pos.exe.config
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\bin\Debug\pos.exe
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\bin\Debug\pos.pdb
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.csprojResolveAssemblyReference.cache
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.POS.resources
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.Properties.Resources.resources
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.csproj.GenerateResource.Cache
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.exe
+c:\users\samik\documents\visual studio 2015\Projects\pos\pos\obj\Debug\pos.pdb
