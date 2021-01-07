@@ -69,6 +69,7 @@
             this.productName.Name = "productName";
             this.productName.Size = new System.Drawing.Size(136, 20);
             this.productName.TabIndex = 2;
+            this.productName.TextChanged += new System.EventHandler(this.productName_TextChanged);
             // 
             // productsList
             // 
