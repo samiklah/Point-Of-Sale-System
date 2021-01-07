@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.productName = new System.Windows.Forms.TextBox();
@@ -40,6 +41,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Update = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +72,7 @@
             // 
             this.productName.Location = new System.Drawing.Point(91, 19);
             this.productName.Name = "productName";
+            this.productName.ReadOnly = true;
             this.productName.Size = new System.Drawing.Size(136, 20);
             this.productName.TabIndex = 2;
             this.productName.TextChanged += new System.EventHandler(this.productName_TextChanged);
@@ -74,11 +80,12 @@
             // productsList
             // 
             this.productsList.FormattingEnabled = true;
-            this.productsList.Location = new System.Drawing.Point(13, 182);
+            this.productsList.Location = new System.Drawing.Point(13, 196);
             this.productsList.Name = "productsList";
             this.productsList.Size = new System.Drawing.Size(235, 160);
             this.productsList.TabIndex = 3;
             this.productsList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.productsList.DoubleClick += new System.EventHandler(this.productsList_DoubleClick);
             // 
             // label2
             // 
@@ -135,6 +142,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Delete);
+            this.groupBox1.Controls.Add(this.Update);
             this.groupBox1.Controls.Add(this.productName);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
@@ -162,11 +171,48 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Order";
             // 
+            // Update
+            // 
+            this.Update.Location = new System.Drawing.Point(45, 148);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.TabIndex = 6;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.Update_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.Location = new System.Drawing.Point(137, 148);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(75, 23);
+            this.Delete.TabIndex = 7;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Location = new System.Drawing.Point(586, 385);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 23);
+            this.Exit.TabIndex = 12;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 410);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "POS";
@@ -194,6 +240,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
